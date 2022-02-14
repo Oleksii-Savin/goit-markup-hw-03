@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --hover-color: #2196f3;
+    --background-color: #2f303a;
+    --light-color: #fff;
+    --alt-hover-color: #188ce8;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-nav,
+.contacts,
+.nav-links,
+.header-container {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-container {
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--hover-color);
+    margin-right: 93px;
+}
+.logo span {
+    color: var(--primary-color);
+}
+.nav-links-item + .nav-links-item {
+    margin-left: 50px;
+}
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+.nav-links-link,
+.contacts-link {
+    padding: 31px 0;
+    display: block;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.17;
+}
+.contacts-link {
+    color: var(--secondary-color);
+}
+.page-nav {
+    align-items: center;
+}
+.contacts-link:focus,
+.nav-links-link:focus,
+.contacts-link:hover,
+.nav-links-link:hover {
+    color: var(--hover-color);
+}
+.current {
+    color: var(--hover-color);
+}
+.link-reset {
+    text-decoration: none;
+}
+.hero-hl {
+    color: var(--light-color);
+}
+.hero-hl {
+    color: var(--light-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-section {
+    background-color: var(--background-color);
+}
+.ul-reset {
+    list-style: none;
+}
+.order-button {
+    color: var(--light-color);
+}
+.button {
+    cursor: pointer;
+    border: none;
+    color: var(--light-color);
+    background-color: var(--hover-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+.order-button:hover,
+.order-button:focus {
+    background-color: #188ce8;
+}
+.feature-hl {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.feature-text {
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+.what-we-do-hl {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-hl {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.teammate-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+.contacts-section-bottom {
+    background-color: var(--background-color);
+}
+.filter-button {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.filter-button:hover,
+filter-button:focus {
+    color: var(--light-color);
+    background-color: var(--hover-color);
+    border: none;
+}
+.portfolio-list h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-list p {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+.address-list {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--light-color);
+}
+.address-list:hover,
+.address-list:focus {
+    color: var(--hover-color);
+}
+footer .logo-studio {
+    color: var(--light-color);
+}
+footer .address-link {
+    color: var(--light-color);
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    opacity: 1;
+}
+footer .address-link:hover,
+footer .address-link:focus {
+    opacity: 0.6;
+}
+footer .contacts-link {
+    color: var(--light-color);
+    font-style: normal;
+    padding: 0;
+    line-height: 1.71;
+    opacity: 0.6;
+}
+footer .contacts-link:focus,
+footer .contacts-link:hover {
+    color: var(--light-color);
+    opacity: 1;
+}
