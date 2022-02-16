@@ -168,6 +168,7 @@ body {
 }
 .feature-list-item {
     margin-right: 30px;
+    margin-bottom: 0;
 }
 .feature-list-item:last-child {
     margin-right: 0;
@@ -181,7 +182,7 @@ body {
     margin-bottom: 10px;
 }
 .feature-text {
-    line-height: 1.17;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
@@ -233,6 +234,7 @@ body {
 }
 .contacts-section-bottom {
     background-color: var(--background-color);
+    padding: 60px 15px;
 }
 .portfolio-section {
     margin-top: 94px;
@@ -263,6 +265,9 @@ filter-button:focus {
 .portfolio-list-item:nth-child(3n) {
     margin-right: 0;
 }
+.portfolio-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
 .portfolio-list h2 {
     font-weight: 700;
     font-size: 18px;
@@ -283,6 +288,8 @@ filter-button:focus {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--light-color);
+    margin-top: 20px;
+    margin-left: 215px;
 }
 .address-list:hover,
 .address-list:focus {
@@ -293,7 +300,9 @@ filter-button:focus {
     margin-top: 0;
     margin-bottom: 50px;
 }
-
+footer .logo {
+    margin-left: 215px;
+}
 footer .logo-studio {
     color: var(--light-color);
 }
