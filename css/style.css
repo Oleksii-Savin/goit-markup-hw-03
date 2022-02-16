@@ -6,6 +6,7 @@
     --background-alt-color: #f5f4fa;
     --light-color: #fff;
     --alt-hover-color: #188ce8;
+    --border-color: #eeeeee;
 }
 
 h1,
@@ -39,14 +40,14 @@ body {
     margin: 0;
 }
 .section {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex;
 }
 .page-nav,
 .contacts,
@@ -56,6 +57,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header-container {
@@ -121,14 +123,14 @@ body {
     background-color: var(--background-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-container {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-}
-.ul-reset {
-    list-style: none;
 }
 .order-button {
     color: var(--light-color);
@@ -158,17 +160,22 @@ body {
     margin-right: auto;
     padding: 0;
 }
-.feature-list-item {
-    margin-top: 0;
-    margin-bottom: 94px;
+.features-section {
+    width: 1200px;
+    padding-bottom: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 .feature-list {
     display: flex;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .feature-list-item {
     margin-right: 30px;
     margin-bottom: 0;
+    display: inline-block;
 }
 .feature-list-item:last-child {
     margin-right: 0;
@@ -186,10 +193,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
-.what-we-do-section {
-    background-color: var(--background-alt-color);
-}
-.what-we-do-hl {
+.section-hl {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -203,12 +207,8 @@ body {
 .what-we-do-list-item {
     margin-right: 30px;
 }
-.team-hl {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+.team-section {
+    background-color: var(--background-alt-color);
 }
 .team-list {
     display: flex;
@@ -217,6 +217,16 @@ body {
     margin-left: 30px;
     border: 1px;
     border-color: var(--primary-color);
+    background-color: var(--light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:first-child {
+    margin-left: 0;
+}
+.team-card-text {
+    margin-top: 30px;
 }
 .teammate-name {
     font-weight: 500;
@@ -224,6 +234,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .position {
     font-size: 16px;
@@ -251,16 +262,38 @@ body {
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 21px;
+    background-color: var(--background-alt-color);
+    border-radius: 4px;
+}
+.filter-button:last-child {
+    margin-right: 0;
 }
 .filter-button:hover,
-filter-button:focus {
+.filter-button:focus {
     color: var(--light-color);
     background-color: var(--hover-color);
     border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-buttons-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.filter-buttons-list-item {
+    margin-right: 8px;
+}
+.filter-buttons-list-item:last-child {
+    margin-right: 0px;
 }
 .portfolio-list-item {
     margin-right: 30px;
     margin-bottom: 30px;
+    background-color: var(--background-alt-color);
 }
 .portfolio-list-item:nth-child(3n) {
     margin-right: 0;
@@ -284,25 +317,29 @@ filter-button:focus {
     display: flex;
     flex-wrap: wrap;
 }
+.portfolio-card-text {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
 .address-list {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--light-color);
     margin-top: 20px;
-    margin-left: 215px;
 }
 .address-list:hover,
 .address-list:focus {
     color: var(--hover-color);
 }
-.filter-buttons-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 50px;
+
+.contacts-section-bottom {
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
 }
-footer .logo {
-    margin-left: 215px;
-}
+
 footer .logo-studio {
     color: var(--light-color);
 }

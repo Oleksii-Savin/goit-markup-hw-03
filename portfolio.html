@@ -33,7 +33,7 @@
                     <a href="index.html" class="logo link-reset" lang="en"
                         >Web<span class="logo-studio">Studio</span></a
                     >
-                    <ul class="nav-links ul-reset">
+                    <ul class="nav-links">
                         <li class="nav-links-item">
                             <a
                                 class="nav-links-link link-reset"
@@ -55,7 +55,7 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts ul-reset">
+                <ul class="contacts">
                     <li class="contacts-item">
                         <a
                             class="contacts-link link-reset"
@@ -78,28 +78,28 @@
                 <h1 hidden>Примеры работ</h1>
                 <div class="container">
                     <nav class="portfolio-filters-nav">
-                        <ul class="ul-reset filter-buttons-list">
-                            <li>
+                        <ul class="filter-buttons-list">
+                            <li class="filter-buttons-list-item">
                                 <button type="button" class="filter-button">
                                     Все
                                 </button>
                             </li>
-                            <li>
+                            <li class="filter-buttons-list-item">
                                 <button type="button" class="filter-button">
                                     Веб-сайты
                                 </button>
                             </li>
-                            <li>
+                            <li class="filter-buttons-list-item">
                                 <button type="button" class="filter-button">
                                     Приложения
                                 </button>
                             </li>
-                            <li>
+                            <li class="filter-buttons-list-item">
                                 <button type="button" class="filter-button">
                                     Дизайн
                                 </button>
                             </li>
-                            <li>
+                            <li class="filter-buttons-list-item">
                                 <button type="button" class="filter-button">
                                     Маркетинг
                                 </button>
@@ -108,7 +108,7 @@
                     </nav>
                 </div>
                 <div class="container portfolio-container">
-                    <ul class="ul-reset portfolio-list">
+                    <ul class="portfolio-list">
                         <li class="portfolio-list-item">
                             <img
                                 src="./images/project-1.jpg"
@@ -116,7 +116,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>Технокряк</h2>
                                 <p>Веб-сайт</p>
                             </div>
@@ -128,7 +128,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>
                                     Постер
                                     <span lang="en"
@@ -145,7 +145,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>Ресторан <span lang="en">Seafood</span></h2>
                                 <p>Приложение</p>
                             </div>
@@ -157,7 +157,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>Проект <span>Prime</span></h2>
                                 <p>Маркетинг</p>
                             </div>
@@ -169,7 +169,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>Проект<span>Boxes</span></h2>
                                 <p>Приложение</p>
                             </div>
@@ -181,7 +181,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2 lang="en">Inspiration has no Borders</h2>
                                 <p>Веб-сайт</p>
                             </div>
@@ -193,7 +193,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>
                                     Издание<span lang="en"
                                         >Limited Edition</span
@@ -209,7 +209,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2>Проект<span lang="en">LAB</span></h2>
                                 <p>Маркетинг</p>
                             </div>
@@ -221,7 +221,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <div>
+                            <div class="portfolio-card-text">
                                 <h2 lang="en">Growing Business</h2>
                                 <p>Приложение</p>
                             </div>
@@ -231,36 +231,38 @@
             </section>
         </main>
         <footer class="contacts-section-bottom">
-            <a href="index.html" class="logo link-reset" lang="en"
-                >Web<span class="logo-studio">Studio</span></a
-            >
-            <address>
-                <ul class="ul-reset address-list">
-                    <li>
-                        <a
-                            class="link-reset address-link"
-                            href="https://goo.gl/maps/FijGcH8Aq5q6NyHH6"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >г. Киев, пр-т Леси Украинки, 26</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="link-reset contacts-link"
-                            href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="link-reset contacts-link"
-                            href="tel.:+380961111111"
-                            >+38 096 111 11 11</a
-                        >
-                    </li>
-                </ul>
-            </address>
+            <div class="container">
+                <a href="index.html" class="logo link-reset" lang="en"
+                    >Web<span class="logo-studio">Studio</span></a
+                >
+                <address>
+                    <ul class="address-list">
+                        <li>
+                            <a
+                                class="link-reset address-link"
+                                href="https://goo.gl/maps/FijGcH8Aq5q6NyHH6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >г. Киев, пр-т Леси Украинки, 26</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="link-reset contacts-link"
+                                href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="link-reset contacts-link"
+                                href="tel.:+380961111111"
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+            </div>
         </footer>
     </body>
 </html>
