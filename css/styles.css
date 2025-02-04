@@ -1,5 +1,5 @@
 /* ------------- Global -------------- */
-
+p,
 h1,
 h2,
 h3,
@@ -18,7 +18,7 @@ ul,
 li {
   list-style-type: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 a {
@@ -161,7 +161,12 @@ address {
   width: 100%;
 }
 .hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 188px 316px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .main-headline {
   font-weight: 700;
@@ -174,7 +179,6 @@ address {
 }
 
 .hero-button {
-  width: 169px;
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 400;
@@ -183,6 +187,9 @@ address {
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  max-width: 169px;
 }
 
 .hero-button:hover,
@@ -201,9 +208,12 @@ address {
 }
 
 .about-us-list {
+  display: flex;
+  gap: 24px;
 }
 
 .about-us-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .about-us-item-headline {
@@ -227,6 +237,7 @@ address {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  text-align: center;
 }
 
 .team-section-headline {
@@ -238,9 +249,15 @@ address {
 }
 
 .team-section-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .team-list-item {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 6px 0 color(46, 47, 66, 8%);
 }
 
 .team-picture {
@@ -251,6 +268,7 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .teammate-role {
