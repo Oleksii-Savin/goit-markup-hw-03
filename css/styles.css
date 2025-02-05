@@ -224,7 +224,7 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 8px;
 }
 
@@ -301,11 +301,16 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 80px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 24px;
 }
 
 .portfolio-list-item {
+  width: calc(100% - 78px) / 3;
 }
 
 .portfolio-picture {
@@ -316,16 +321,22 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 8px;
 }
-
+.portfolio-description {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  box-shadow: 0 1px 6px 0 rgba(231, 233, 252, 100);
+}
 .portfolio-item-text {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-section {
@@ -334,7 +345,8 @@ address {
   padding-bottom: 100px;
 }
 .footer-wrapper {
-  padding-right: 864px;
+  text-align: left;
+  max-width: 264px;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -343,6 +355,8 @@ address {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .footer-logo-studio {
